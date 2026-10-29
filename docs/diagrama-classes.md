@@ -69,4 +69,4 @@ classDiagram
 | `Cart → Product` | "Um **carrinho guarda** produtos" |
 | `Order → Customer` | "Um **pedido é de um** cliente" |
 
-> Nas próximas aulas, o desenho vai ganhar classes novas, como `User` (herança, Aula 5) e as formas de pagamento (aula assíncrona).
+> Nas próximas aulas, o desenho vai ganhar classes novas, como `User` (herança) e as formas de pagamento.

@@ -34,10 +34,3 @@ Troque `[ ]` por `[x]` quando terminar (ex.: `- [x] Aula 1`):
 - [ ] Aula 6
 - [ ] Aula 7
 
-## ✍️ Minhas respostas (aula assíncrona)
-
-1. O que é polimorfismo?
-   - 
-
-2. Qual método foi reescrito nas classes filhas?
-   - 

@@ -1,16 +1,14 @@
-# ✅ Critérios de avaliação: como você será avaliado(a)
-
+# ✅ Critérios de avaliação
 A nota não depende só do projeto no final: **cada aula conta**. Fazer um pouquinho em toda aula vale mais do que fazer tudo no último dia. 😉
 
-| O que conta | Peso | O que a professora vai olhar |
+| O que conta | O que a professora vai olhar |
 |---|---|---|
-| 🧱 Classes e objetos (POO) | 30% | Você criou as classes e usou objetos corretamente? |
-| ⚙️ Sistema funcionando | 25% | O programa executa e faz o que foi pedido? |
-| 💾 GitHub | 20% | Você fez commit e push em **toda** aula? |
-| 📂 Salvar em arquivo (JSON) | 10% | Os dados continuam lá depois de fechar o programa? |
-| 🧪 Testes | 5% | Os testes da Aula 7 funcionam? |
-| 📝 Documentação | 5% | O README tem seu nome e a lista de entregas está marcada? |
-| 🎤 Apresentação | 5% | Você mostrou o sistema funcionando e explicou o seu código? |
+| Classes e objetos (POO) | Você criou as classes e usou objetos corretamente? |
+| Sistema funcionando | O programa executa e faz o que foi pedido? |
+| GitHub | Você fez commit e push em **toda** aula? |
+| Testes | Os testes da Aula 7 funcionam? |
+| Documentação | O README tem seu nome e a lista de entregas está marcada? |
+| Apresentação | Você mostrou o sistema funcionando e explicou o seu código? |
 
 ## Dicas para ir bem
 

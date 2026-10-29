@@ -7,7 +7,7 @@
 | 3 | 05/11 (qui) | Um objeto dentro de outro | Classes `Customer` e `Address` |
 | 4 | 10/11 (ter) | Carrinho de compras | Colocar, tirar e listar produtos no carrinho |
 | 5 | 12/11 (qui) | Herança e pedidos | Pedido finalizado com o valor total |
-| 🏠 | 14/11 (sáb) | **Aula assíncrona** (em casa) | Formas de pagamento. **Prazo: 16/11, 23h59** |
+| 🏠 | 14/11 (sáb) | **Aula assíncrona** | Formas de pagamento. |
 | 6 | 17/11 (ter) | Salvar dados em arquivo | Dados guardados em arquivos JSON |
 | 7 | 19/11 (qui) | Testes e apresentação | Projeto completo e apresentado |
 

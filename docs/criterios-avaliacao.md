@@ -1,5 +1,5 @@
 # ✅ Critérios de avaliação
-A nota não depende só do projeto no final: **cada aula conta**. Fazer um pouquinho em toda aula vale mais do que fazer tudo no último dia. 😉
+A nota não depende só do projeto no final: **cada aula conta**. Fazer um pouquinho em toda aula vale mais do que fazer tudo no último dia.
 
 | O que conta | O que a professora vai olhar |
 |---|---|---|

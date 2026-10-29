@@ -1,32 +1,28 @@
-# 📋 Requisitos do sistema
+# 📋 Requisitos: o que o sistema precisa fazer
 
-O sistema é o **backend** de uma loja virtual, operado pelo terminal (menu em `src/main.py`).
+**Requisito** é algo que o sistema **precisa fazer** para ser útil. Pense nele como uma lista de pedidos do "dono da loja".
 
-## Requisitos funcionais (RF)
+Nossa loja vai funcionar no **terminal** (sem telas bonitas por enquanto).
 
-| ID | Requisito | Aula |
+## O que a loja deve fazer
+
+| Nº | O sistema deve... | Aula |
 |---|---|---|
-| RF01 | Cadastrar categorias de produtos | 2 |
-| RF02 | Cadastrar produtos com nome, preço, estoque e categoria | 2 |
-| RF03 | Listar produtos cadastrados | 2 |
-| RF04 | Cadastrar clientes com nome, e-mail e CPF | 3 |
-| RF05 | Associar um ou mais endereços a um cliente | 3 |
-| RF06 | Adicionar produto ao carrinho informando a quantidade | 4 |
-| RF07 | Remover produto do carrinho | 4 |
-| RF08 | Listar itens do carrinho com subtotal e total | 4 |
-| RF09 | Finalizar pedido a partir do carrinho | 5 |
-| RF10 | Listar pedidos de um cliente | 5 |
-| RF13 | Calcular o total da compra conforme a forma de pagamento (Pix, boleto ou cartão) | Assíncrona |
-| RF11 | Salvar e carregar produtos, clientes e pedidos em JSON | 6 |
-| RF12 | Exibir mensagens de erro claras para operações inválidas | 6 |
+| 1 | Cadastrar **categorias** de produtos (ex.: Eletrônicos, Roupas) | 2 |
+| 2 | Cadastrar **produtos** com nome, preço e quantidade em estoque | 2 |
+| 3 | Mostrar a lista de produtos | 2 |
+| 4 | Cadastrar **clientes** com nome e e-mail | 3 |
+| 5 | Guardar o **endereço** do cliente | 3 |
+| 6 | Colocar produtos no **carrinho** | 4 |
+| 7 | Tirar produtos do carrinho | 4 |
+| 8 | Mostrar o **valor total** do carrinho | 4 |
+| 9 | **Finalizar o pedido** | 5 |
+| 10 | Calcular o valor conforme a **forma de pagamento** (Pix, boleto ou cartão) | Assíncrona |
+| 11 | **Salvar os dados** em arquivos, para não perder nada ao fechar o programa | 6 |
 
-## Requisitos não funcionais (RNF)
+## Como o código deve ser feito
 
-| ID | Requisito |
-|---|---|
-| RNF01 | O sistema deve ser escrito em Python 3.10 ou superior |
-| RNF02 | O código deve seguir o paradigma orientado a objetos (uma classe por arquivo em `src/models`) |
-| RNF03 | Atributos das classes devem ser encapsulados (uso de `_atributo` e `@property`) |
-| RNF04 | Os dados devem ser persistidos em arquivos JSON na pasta `data/` |
-| RNF05 | O projeto deve ter testes automatizados executáveis com `pytest` |
-| RNF06 | O código deve estar versionado no GitHub com commits frequentes e descritivos |
+- ✅ Escrito em **Python**
+- ✅ Usando **classes e objetos**
+- ✅ Uma classe em cada arquivo, dentro da pasta `src/models/`
+- ✅ Salvo no **GitHub**, com commit em toda aula

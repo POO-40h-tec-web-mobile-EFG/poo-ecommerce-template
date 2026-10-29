@@ -1,35 +1,10 @@
-"""
-Ponto de entrada do sistema.
+# Este é o arquivo principal do sistema.
+# Para executar, abra o terminal na pasta do projeto e digite:
+#     python3 src/main.py
 
-Execute a partir da RAIZ do projeto:
-    python -m src.main
-"""
+print("=================================")
+print("   Bem-vindo(a) à Loja POO! 🛒")
+print("=================================")
 
-MENU = """
-========================================
-        LOJA POO — Backend Python
-========================================
- 1 - Produtos e categorias   (Aula 2)
- 2 - Clientes e endereços    (Aula 3)
- 3 - Carrinho de compras     (Aula 4)
- 4 - Pedidos                 (Aula 5)
- 0 - Sair
-========================================"""
-
-
-def main() -> None:
-    while True:
-        print(MENU)
-        opcao = input("Escolha uma opção: ").strip()
-
-        if opcao == "0":
-            print("Até a próxima!")
-            break
-        elif opcao in {"1", "2", "3", "4"}:
-            print("\n>> Funcionalidade ainda não implementada. Vamos construir nas próximas aulas!")
-        else:
-            print("\n>> Opção inválida. Tente novamente.")
-
-
-if __name__ == "__main__":
-    main()
+# ✏️ AULA 1: troque o texto abaixo pelo seu nome
+print("Desenvolvido por: Seu Nome Aqui")

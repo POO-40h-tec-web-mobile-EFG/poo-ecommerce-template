@@ -1,21 +1,26 @@
-# ⚖️ Regras de negócio
+# ⚖️ Regras de negócio: as regras da loja
 
-| ID | Regra | Onde aplicar |
+**Regra de negócio** é uma regra que a loja segue no mundo real e que o sistema precisa respeitar.
+
+> Exemplo do dia a dia: "não dá para vender um produto que acabou no estoque".
+
+## Regras da nossa loja
+
+| Nº | Regra | Por quê? |
 |---|---|---|
-| RN01 | O preço de um produto deve ser maior que zero | `Product` |
-| RN02 | O estoque de um produto não pode ser negativo | `Product` |
-| RN03 | Todo produto pertence a exatamente uma categoria | `Product` / `Category` |
-| RN04 | O e-mail do cliente deve conter `@` | `Customer` |
-| RN05 | Um cliente pode ter vários endereços, mas pelo menos um para fechar pedido | `Customer` / `Order` |
-| RN06 | A quantidade de um item no carrinho deve ser maior que zero | `CartItem` |
-| RN07 | Não é possível adicionar ao carrinho quantidade maior que o estoque | `Cart` |
-| RN08 | Adicionar um produto que já está no carrinho soma a quantidade | `Cart` |
-| RN09 | Não é possível finalizar pedido com carrinho vazio | `Order` / serviço de pedido |
-| RN10 | Ao finalizar o pedido, o estoque dos produtos é reduzido | serviço de pedido |
-| RN11 | O preço do item no pedido é fixado no momento da compra | `OrderItem` |
-| RN12 | Após finalizar o pedido, o carrinho é esvaziado | serviço de pedido |
-| RN13 | Pagamento via Pix tem 5% de desconto | `PixPayment` |
-| RN14 | Pagamento via boleto é cobrado pelo valor integral | `BoletoPayment` |
-| RN15 | Cartão de crédito: até 3x sem acréscimo; acima de 3x, acréscimo de 10% | `CreditCardPayment` |
-| RN16 | O valor a pagar deve ser maior que zero | `PaymentMethod` |
-| RN17 | O cartão de crédito aceita de 1 a 12 parcelas | `CreditCardPayment` |
+| 1 | O preço de um produto precisa ser **maior que zero** | Ninguém vende de graça (nem com preço negativo!) |
+| 2 | Todo produto pertence a **uma categoria** | Para organizar a loja |
+| 3 | O e-mail do cliente precisa ter **@** | Para não cadastrar e-mail errado |
+| 4 | Não dá para colocar no carrinho **mais unidades do que tem no estoque** | Não dá para vender o que não existe |
+| 5 | Se o produto já está no carrinho, a quantidade **aumenta** (não duplica) | Para o carrinho ficar organizado |
+| 6 | Não dá para finalizar pedido com o **carrinho vazio** | Não existe pedido sem produto |
+| 7 | Depois que o pedido é finalizado, o **carrinho fica vazio** | Para começar uma nova compra |
+| 8 | Pagamento no **Pix tem 5% de desconto** | Para incentivar o Pix |
+| 9 | Pagamento no **cartão tem 10% de acréscimo** | Por causa das taxas do cartão |
+
+💡 **Dica:** no código, essas regras quase sempre viram um `if`. Por exemplo:
+
+```python
+if price <= 0:
+    print("Erro: o preço precisa ser maior que zero!")
+```

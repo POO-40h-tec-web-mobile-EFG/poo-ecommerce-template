@@ -1,29 +1,7 @@
-# Python
+# Arquivos que o Git deve ignorar (não precisa mexer aqui)
 __pycache__/
-*.py[cod]
-*.log
-
-# Ambientes virtuais
-.venv/
+*.pyc
 venv/
-env/
-
-# Variáveis de ambiente
-.env
-
-# Editores
+.venv/
 .vscode/
-.idea/
-
-# Testes
 .pytest_cache/
-.coverage
-htmlcov/
-
-# Sistema operacional
-.DS_Store
-Thumbs.db
-
-# Dados gerados ao executar o sistema (os alunos podem remover esta linha
-# se quiserem versionar exemplos de JSON)
-data/*.json

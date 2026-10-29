@@ -1,35 +1,43 @@
-# 📅 Cronograma e entregas
+# 📅 Entregas: o que entregar em cada aula
 
-Período: **29/10/2026 a 19/11/2026** — 7 encontros presenciais de 3 horas + 1 aula assíncrona.
+| Aula | Data | Tema | O que você entrega |
+|---|---|---|---|
+| 1 | 29/10 (qui) | Conhecer o projeto e o GitHub | Repositório criado, com seu nome no `main.py` e no `README.md` |
+| 2 | 03/11 (ter) | Primeiras classes | Classes `Product` e `Category` |
+| 3 | 05/11 (qui) | Um objeto dentro de outro | Classes `Customer` e `Address` |
+| 4 | 10/11 (ter) | Carrinho de compras | Colocar, tirar e listar produtos no carrinho |
+| 5 | 12/11 (qui) | Herança e pedidos | Pedido finalizado com o valor total |
+| 🏠 | 14/11 (sáb) | **Aula assíncrona** (em casa) | Formas de pagamento. **Prazo: 16/11, 23h59** |
+| 6 | 17/11 (ter) | Salvar dados em arquivo | Dados guardados em arquivos JSON |
+| 7 | 19/11 (qui) | Testes e apresentação | Projeto completo e apresentado |
 
-> As datas a partir do 2º encontro são previstas e podem ser ajustadas pela professora.
-
-| # | Data | Tema | Conceitos de POO | Entregável |
-|---|---|---|---|---|
-| 1 | 29/10 (qui) | Kickoff e GitHub | Paradigma OO, Git e GitHub | Repositório individual publicado e README atualizado |
-| 2 | 03/11 (ter) | Product e Category | Classe, objeto, construtor, encapsulamento | Classes `Product` e `Category` implementadas |
-| 3 | 05/11 (qui) | Customer e Address | Composição (TEM-UM) | Cadastro de clientes |
-| 4 | 10/11 (ter) | Carrinho | Listas de objetos, agregação | Adicionar, remover e listar produtos no carrinho |
-| 5 | 12/11 (qui) | Pedidos e Herança | Herança (É-UM), `super()` | Pedido finalizado com total calculado |
-| A | 14/11 (sáb) | **Aula assíncrona** — Polimorfismo | Classe abstrata, sobrescrita, polimorfismo | Formas de pagamento (`PaymentMethod`, Pix, Boleto, Cartão) — prazo 16/11, 23h59 |
-| 6 | 17/11 (ter) | Persistência JSON e Exceções | Exceções customizadas | Dados gravados em arquivos JSON |
-| 7 | 19/11 (qui) | Testes e Apresentação | Testes unitários | Projeto completo, documentado e apresentado |
+> As datas a partir da Aula 2 podem mudar. A professora avisa!
 
 ## Como entregar
 
-1. Ao final de cada aula, faça `commit` e `push` do que foi produzido.
-2. A mensagem do último commit da aula deve indicar a entrega, por exemplo:
-   `feat: entrega aula 2 - Product e Category`
-3. Abra uma **Issue** no seu repositório usando o modelo **Entrega de aula** e marque o checklist.
-4. Marque abaixo o que já foi entregue:
+1. Termine a atividade da aula.
+2. Faça o **commit** com a mensagem `Aula X - o que você fez`. Ex.: `Aula 2 - cria classe Product`
+3. Faça o **push** (botão **Sync Changes** no VS Code).
+4. Abra o seu repositório no GitHub e confira se apareceu. ✅
+5. Marque a aula como feita na lista abaixo e faça outro commit.
 
-## Meu progresso
+## ✅ Meu progresso
 
-- [ ] Aula 1 — Repositório criado e README atualizado
-- [ ] Aula 2 — Product e Category
-- [ ] Aula 3 — Customer e Address
-- [ ] Aula 4 — Cart e CartItem
-- [ ] Aula 5 — User, Order e OrderItem
-- [ ] Aula assíncrona — Formas de pagamento (polimorfismo)
-- [ ] Aula 6 — JSON e exceções
-- [ ] Aula 7 — Testes e apresentação
+Troque `[ ]` por `[x]` quando terminar (ex.: `- [x] Aula 1`):
+
+- [ ] Aula 1
+- [ ] Aula 2
+- [ ] Aula 3
+- [ ] Aula 4
+- [ ] Aula 5
+- [ ] Aula assíncrona
+- [ ] Aula 6
+- [ ] Aula 7
+
+## ✍️ Minhas respostas (aula assíncrona)
+
+1. O que é polimorfismo?
+   - 
+
+2. Qual método foi reescrito nas classes filhas?
+   - 

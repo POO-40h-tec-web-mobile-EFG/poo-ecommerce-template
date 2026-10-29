@@ -1,3 +1,2 @@
-# Dependências do projeto
-# Instalar com: pip install -r requirements.txt
-pytest>=8.0
+# Bibliotecas que vamos usar no projeto (só na Aula 7)
+pytest

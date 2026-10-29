@@ -1,4 +1,3 @@
+# Configuração dos testes (Aula 7). Não precisa mexer aqui.
 [tool.pytest.ini_options]
-# Permite que os testes importem "src" a partir da raiz do projeto
-pythonpath = ["."]
-testpaths = ["tests"]
+pythonpath = ["src"]

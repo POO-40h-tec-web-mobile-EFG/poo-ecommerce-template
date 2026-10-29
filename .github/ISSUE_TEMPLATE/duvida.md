@@ -1,16 +1,14 @@
 ---
 name: Dúvida
-about: Peça ajuda à professora sobre o projeto
+about: Peça ajuda à professora
 title: "Dúvida: "
 labels: duvida
-assignees: ''
 ---
 
-## Qual é a dúvida?
+**Qual é a sua dúvida?**
 
-## O que você já tentou?
 
-## Mensagem de erro (se houver)
+**Se apareceu alguma mensagem de erro, cole aqui:**
 ```
-cole aqui
+
 ```

@@ -1,39 +1,61 @@
-# Aula 1 — Kickoff e GitHub (29/10/2026)
+# Aula 1: Conhecendo o projeto e o GitHub (29/10)
 
-## 🎯 Objetivos
-- Conhecer o produto final: o backend de uma loja virtual orientada a objetos.
-- Entender a diferença entre o **template** (da professora) e o **seu repositório**.
-- Praticar o fluxo `clone → editar → add → commit → push`.
+## 🎯 Hoje você vai
+- Criar o **seu** repositório do projeto
+- Abrir o projeto no VS Code
+- Executar o seu primeiro programa
+- Fazer o seu primeiro **commit**
 
-## 🧠 Conceitos do dia
-- **Paradigma orientado a objetos:** o sistema é formado por objetos que têm **dados** (atributos) e **comportamentos** (métodos).
-- **Git:** controle de versão no seu computador.
-- **GitHub:** onde o repositório fica publicado e onde a professora acompanha suas entregas.
-- **Repositório template:** um modelo que gera cópias independentes.
+---
 
-## 🛠️ Atividade prática
-1. [ ] Criar o repositório `ecommerce-python-seunome` a partir do template (**Use this template**).
-2. [ ] Clonar o repositório e abri-lo no VS Code.
-3. [ ] Criar o ambiente virtual e instalar as dependências (`pip install -r requirements.txt`).
-4. [ ] Executar o sistema: `python -m src.main`.
-5. [ ] Executar os testes: `pytest` (um teste vai falhar — é de propósito!).
-6. [ ] Preencher a seção **Sobre mim** do `README.md`.
-7. [ ] Rodar `pytest` de novo e ver todos os testes passando ✅.
-8. [ ] Fazer o commit e o push:
-   ```bash
-   git add .
-   git commit -m "docs: atualiza README com meus dados"
-   git push
-   ```
-9. [ ] Abrir uma Issue **Entrega de aula** com o checklist da Aula 1.
+## Passo 1: Criar o seu repositório
+1. Abra o link do template que a professora passou.
+2. Clique no botão verde **Use this template → Create a new repository**.
+3. Em **Repository name**, escreva: `ecommerce-python-seunome` (ex.: `ecommerce-python-maria`)
+4. Clique em **Create repository**.
 
-## 💭 Desafio de modelagem (para discutir em sala)
-Olhando para uma loja virtual que você usa, responda:
-- Quais **objetos** existem? (ex.: produto, cliente...)
-- Que **atributos** um produto tem?
-- Que **ações** um carrinho de compras executa?
+## Passo 2: Abrir no VS Code
+1. No seu repositório no GitHub, clique no botão verde **Code** e copie o link.
+2. Abra o VS Code e aperte `Ctrl + Shift + P`.
+3. Digite **Git: Clone**, aperte Enter e cole o link.
+4. Escolha uma pasta no computador e clique em **Open** quando ele perguntar.
 
-Anote suas respostas — vamos usá-las na Aula 2.
+## Passo 3: Configurar o Git (só na primeira vez)
+No terminal do VS Code (**Terminal → New Terminal**), digite (com o seu nome e e-mail do GitHub):
 
-## 📦 Entregável
-Repositório individual publicado no GitHub com o README atualizado.
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@exemplo.com"
+```
+
+## Passo 4: Executar o programa
+No terminal, digite:
+
+```bash
+python3 src/main.py
+```
+
+Deve aparecer a mensagem de boas-vindas da loja. 🎉
+
+## Passo 5: Colocar o seu nome
+1. Abra `src/main.py` e troque `Seu Nome Aqui` pelo seu nome.
+2. Execute de novo e veja o seu nome aparecer.
+3. Abra o `README.md` e preencha a parte **Sobre mim**.
+
+## Passo 6: Fazer o primeiro commit
+1. Clique no ícone **Source Control** (barra da esquerda).
+2. Mensagem: `Aula 1 - meu primeiro commit`
+3. Clique em **Commit** e depois em **Sync Changes**.
+4. Abra o seu repositório no GitHub e confira se as mudanças apareceram. ✅
+
+---
+
+## 💭 Para pensar
+Pense numa loja online que você usa:
+- Que **coisas** existem nela? (produto, cliente...)
+- Que **informações** um produto tem?
+
+Vamos usar suas respostas na Aula 2!
+
+## 📦 Entrega
+Repositório criado no GitHub, com o seu nome no `main.py` e no `README.md`.

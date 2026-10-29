@@ -1,13 +1,20 @@
-# ✅ Critérios de avaliação
+# ✅ Critérios de avaliação: como você será avaliado(a)
 
-| Critério | Peso | O que será observado |
+A nota não depende só do projeto no final: **cada aula conta**. Fazer um pouquinho em toda aula vale mais do que fazer tudo no último dia. 😉
+
+| O que conta | Peso | O que a professora vai olhar |
 |---|---|---|
-| Programação Orientada a Objetos | 30% | Classes bem definidas, encapsulamento, composição, herança e polimorfismo |
-| Funcionalidades | 25% | Requisitos RF01–RF12 funcionando pelo menu |
-| GitHub | 20% | Commits frequentes, mensagens descritivas, entregas em dia |
-| Persistência JSON | 10% | Dados salvos e carregados corretamente da pasta `data/` |
-| Testes | 5% | Testes com `pytest` executando sem falhas |
-| Documentação | 5% | README completo e pasta `docs/` atualizada |
-| Apresentação | 5% | Demonstração do sistema e explicação do código |
+| 🧱 Classes e objetos (POO) | 30% | Você criou as classes e usou objetos corretamente? |
+| ⚙️ Sistema funcionando | 25% | O programa executa e faz o que foi pedido? |
+| 💾 GitHub | 20% | Você fez commit e push em **toda** aula? |
+| 📂 Salvar em arquivo (JSON) | 10% | Os dados continuam lá depois de fechar o programa? |
+| 🧪 Testes | 5% | Os testes da Aula 7 funcionam? |
+| 📝 Documentação | 5% | O README tem seu nome e a lista de entregas está marcada? |
+| 🎤 Apresentação | 5% | Você mostrou o sistema funcionando e explicou o seu código? |
 
-A avaliação é **contínua e processual**: o histórico de commits e as Issues de entrega são acompanhados a cada aula.
+## Dicas para ir bem
+
+- ✅ Faça **commit no final de toda aula**, mesmo que o código não esteja perfeito.
+- ✅ **Execute o programa** antes de entregar, para ver se não tem erro.
+- ✅ Travou? Abra uma **Issue de Dúvida** no GitHub ou pergunte em sala. Pedir ajuda faz parte!
+- ✅ Na apresentação, explique com as **suas palavras**. Não precisa decorar.

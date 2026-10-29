@@ -1,7 +1,1 @@
-"""
-repositories — Persistência dos dados (Aula 6).
-
-Classes responsáveis por salvar e carregar objetos em arquivos JSON
-dentro da pasta data/.
-Exemplo: ProductRepository.save(product), ProductRepository.find_all()
-"""
+# Aqui fica o código que salva e lê os arquivos JSON (Aula 6)

@@ -1,117 +1,72 @@
-# 🧩 Diagrama de classes (produto final esperado)
+# 🧩 Diagrama de classes: o desenho do sistema
 
-Este é o modelo que vamos construir até a Aula 7. O GitHub desenha o diagrama automaticamente a partir do código Mermaid abaixo.
+O **diagrama de classes** é um desenho que mostra:
+- quais **classes** o sistema tem (cada caixa é uma classe);
+- o que cada classe **guarda** (atributos);
+- o que cada classe **sabe fazer** (métodos, que terminam com `()`);
+- como as classes **se relacionam** (as setas).
+
+É como a **planta de uma casa**: a gente desenha antes de construir.
+
+## Nossa loja
 
 ```mermaid
 classDiagram
-    class User {
-        -name: str
-        -email: str
-    }
-
-    class Customer {
-        -cpf: str
-        -addresses: list~Address~
-        +add_address(address)
-    }
-
-    class Address {
-        -street: str
-        -number: str
-        -city: str
-        -state: str
-        -zip_code: str
-    }
-
     class Category {
-        -name: str
-        -description: str
+        name
     }
-
     class Product {
-        -name: str
-        -price: float
-        -stock: int
-        -category: Category
-        +decrease_stock(quantity)
+        name
+        price
+        stock
+        category
     }
-
+    class Address {
+        street
+        number
+        city
+    }
+    class Customer {
+        name
+        email
+        address
+    }
     class Cart {
-        -customer: Customer
-        -items: list~CartItem~
-        +add_product(product, quantity)
-        +remove_product(product)
-        +total() float
-        +clear()
+        items
+        add_product()
+        remove_product()
+        total()
     }
-
-    class CartItem {
-        -product: Product
-        -quantity: int
-        +subtotal() float
-    }
-
     class Order {
-        -customer: Customer
-        -items: list~OrderItem~
-        -created_at: datetime
-        -status: str
-        -payment: PaymentMethod
-        +total() float
+        customer
+        items
+        total()
     }
 
-    class OrderItem {
-        -product: Product
-        -quantity: int
-        -unit_price: float
-        +subtotal() float
-    }
-
-    class PaymentMethod {
-        <<abstract>>
-        +calculate_total(amount)* float
-        +description()* str
-    }
-
-    class PixPayment {
-        +calculate_total(amount) float
-        +description() str
-    }
-
-    class BoletoPayment {
-        +calculate_total(amount) float
-        +description() str
-    }
-
-    class CreditCardPayment {
-        -installments: int
-        +calculate_total(amount) float
-        +description() str
-    }
-
-    PaymentMethod <|-- PixPayment : polimorfismo
-    PaymentMethod <|-- BoletoPayment
-    PaymentMethod <|-- CreditCardPayment
-    Order --> "1" PaymentMethod
-
-    User <|-- Customer : herança (É-UM)
-    Customer *-- "1..*" Address : composição (TEM-UM)
-    Product --> "1" Category
-    Cart --> "1" Customer
-    Cart *-- "0..*" CartItem
-    CartItem --> "1" Product
-    Order --> "1" Customer
-    Order *-- "1..*" OrderItem
-    OrderItem --> "1" Product
+    Product --> Category : pertence a
+    Customer --> Address : tem um
+    Cart --> Product : guarda
+    Order --> Customer : é de um
 ```
 
-## Legenda
+## O que é cada classe
 
-| Símbolo | Significado |
+| Classe | Em português | O que guarda |
+|---|---|---|
+| `Category` | Categoria | o nome da categoria |
+| `Product` | Produto | nome, preço, estoque e categoria |
+| `Address` | Endereço | rua, número e cidade |
+| `Customer` | Cliente | nome, e-mail e endereço |
+| `Cart` | Carrinho | os produtos escolhidos |
+| `Order` | Pedido | o cliente e os produtos comprados |
+
+## Como ler as setas
+
+| Seta | Lê-se assim |
 |---|---|
-| `-` | atributo privado/protegido (em Python: `_atributo`) |
-| `+` | público |
-| `<|--` | herança: `Customer` **é um** `User` |
-| `*--` | composição: a parte não existe sem o todo |
-| `<<abstract>>` / `*` | classe abstrata / método abstrato (as subclasses são obrigadas a implementar) |
-| `-->` | associação: um objeto conhece/usa o outro |
+| `Product → Category` | "Um **produto pertence a** uma categoria" |
+| `Customer → Address` | "Um **cliente tem um** endereço" |
+| `Cart → Product` | "Um **carrinho guarda** produtos" |
+| `Order → Customer` | "Um **pedido é de um** cliente" |
+
+> Nas próximas aulas, o desenho vai ganhar classes novas, como `User` (herança, Aula 5) e as formas de pagamento (aula assíncrona).

@@ -1,115 +1,65 @@
-# 🛒 Loja POO — Backend de E-commerce em Python
+# 🛒 Loja POO
 
-Projeto da disciplina **Programação Orientada a Objetos (40h)** — Curso Técnico em Desenvolvimento de Sistemas.
+Projeto da disciplina **Programação Orientada a Objetos** em Python.
 
-Ao longo de 7 encontros presenciais e 1 aula assíncrona, cada aluno vai construir **individualmente** o backend de uma loja virtual em Python, aplicando classes, objetos, encapsulamento, composição, herança, polimorfismo, persistência em JSON, exceções e testes.
-
-> ⚠️ Este repositório é o **template** da disciplina. Não faça commits aqui: crie o **seu** repositório a partir dele (passo 1 abaixo).
+Durante o curso, você vai construir, passo a passo, o "cérebro" de uma loja virtual: produtos, clientes, carrinho de compras e pedidos.
 
 ---
 
 ## 👤 Sobre mim
 
-> Entregável da Aula 1: substitua os dados abaixo pelos seus e faça commit.
+> ✏️ Aula 1: troque os dados abaixo pelos seus.
 
 - **Nome:** Seu Nome Aqui
-- **Turma:** 
-- **GitHub:** https://github.com/seu-usuario
-- **O que espero aprender nesta disciplina:** 
+- **Turma:**
 
 ---
 
-## 🚀 Como começar
+## ▶️ Como executar
 
-### 1. Criar o seu repositório a partir do template
-1. Na página deste repositório, clique em **Use this template → Create a new repository**.
-2. Owner: a organização da turma (ou sua conta, conforme orientação da professora).
-3. Nome: `ecommerce-python-seunome` (ex.: `ecommerce-python-maria`).
-4. Clique em **Create repository**.
+No VS Code, abra o terminal (**Terminal → New Terminal**) e digite:
 
-### 2. Clonar e abrir no VS Code
 ```bash
-git clone https://github.com/ORGANIZACAO/ecommerce-python-seunome.git
-cd ecommerce-python-seunome
-code .
-```
-
-### 3. Criar o ambiente virtual e instalar as dependências
-```bash
-python3 -m venv venv
-
-# Linux / Mac
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
-
-pip install -r requirements.txt
-```
-
-### 4. Executar o sistema
-Sempre a partir da **raiz** do projeto:
-```bash
-python -m src.main
-```
-
-### 5. Executar os testes
-```bash
-pytest
-```
-Na Aula 1, o teste `test_readme_foi_preenchido_pelo_aluno` só passa depois que você preencher a seção **Sobre mim**. 😉
-
----
-
-## 📁 Estrutura do projeto
-
-```
-ecommerce-python-seunome/
-├── data/                 # Arquivos JSON gerados pelo sistema (Aula 6)
-├── docs/                 # Requisitos, regras de negócio, diagramas e entregas
-│   └── aulas/            # Roteiro de cada encontro
-├── src/
-│   ├── models/           # Classes de domínio: Product, Customer, Cart, Order...
-│   ├── services/         # Regras de negócio
-│   ├── repositories/     # Leitura e gravação em JSON
-│   ├── exceptions/       # Exceções customizadas
-│   └── main.py           # Ponto de entrada (menu do sistema)
-├── tests/                # Testes com pytest
-├── requirements.txt
-└── README.md
+python3 src/main.py
 ```
 
 ---
 
-## 🔁 Fluxo de trabalho com Git
+## 📁 O que tem em cada pasta
 
-A cada funcionalidade concluída:
-```bash
-git status                      # o que mudou?
-git add .                       # preparar as mudanças
-git commit -m "feat: cria classe Product"
-git push                        # enviar para o GitHub
-```
+| Pasta | Para que serve |
+|---|---|
+| `src/` | Todo o código do sistema |
+| `src/main.py` | Arquivo principal: é ele que você executa |
+| `src/models/` | As classes da loja (Product, Customer, Cart...) |
+| `data/` | Arquivos onde o sistema vai guardar os dados (Aula 6) |
+| `tests/` | Testes automáticos do código (Aula 7) |
+| `docs/` | Cronograma, roteiros das aulas e glossário |
 
-**Padrão de mensagens de commit**
-
-| Prefixo | Quando usar | Exemplo |
-|---|---|---|
-| `feat:` | nova funcionalidade | `feat: adiciona cálculo do total do carrinho` |
-| `fix:` | correção de erro | `fix: impede preço negativo em Product` |
-| `docs:` | documentação | `docs: atualiza README com meus dados` |
-| `test:` | testes | `test: cria testes de Cart` |
-| `refactor:` | melhoria sem mudar comportamento | `refactor: extrai OrderService` |
-
-> 📌 O histórico de commits é **evidência de participação**. Faça commits pequenos e frequentes — pelo menos um por aula.
+As pastas `services/`, `repositories/` e `exceptions/` vão ser usadas mais para frente. Por enquanto, pode ignorar. 😉
 
 ---
 
-## 📚 Documentação
+## 💾 Como salvar no GitHub (commit e push)
 
-- [Cronograma e entregas](docs/entregas.md)
-- [Requisitos](docs/requisitos.md)
-- [Regras de negócio](docs/regras-negocio.md)
-- [Diagrama de classes](docs/diagrama-classes.md)
+Faça isso **ao final de toda aula**:
+
+1. No VS Code, clique no ícone **Source Control** (a "forquilha" na barra da esquerda).
+2. Escreva uma mensagem curta dizendo o que você fez. Ex.: `Aula 2 - cria classe Product`
+3. Clique em **Commit** (se perguntar, clique em **Yes** para incluir todos os arquivos).
+4. Clique em **Sync Changes** (ou **Push**).
+
+Pronto! Seu código está salvo no GitHub. ✅
+
+---
+
+## 📚 Material da disciplina
+
+- [Entregas: o que entregar em cada aula](docs/entregas.md)
+- [Requisitos: o que o sistema precisa fazer](docs/requisitos.md)
+- [Regras de negócio: as regras da loja](docs/regras-negocio.md)
+- [Diagrama de classes: o desenho do sistema](docs/diagrama-classes.md)
 - [Critérios de avaliação](docs/criterios-avaliacao.md)
+- [Glossário: palavras novas](docs/glossario.md)
 - [Roteiro da Aula 1](docs/aulas/aula-01-kickoff.md)
-- [Aula assíncrona — Polimorfismo (14/11)](docs/aulas/aula-assincrona-polimorfismo.md)
+- [Aula assíncrona (14/11)](docs/aulas/aula-assincrona.md)
